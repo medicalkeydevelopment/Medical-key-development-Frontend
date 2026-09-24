@@ -12,6 +12,7 @@ import {
   Heart,
 } from "lucide-react";
 import { quickLinks, ourServices, supportLinks } from "@/data/footerLinks";
+import Image from "next/image";
 
 const socials = [
   { icon: Facebook, label: "Facebook", href: "#" },
@@ -43,9 +44,15 @@ export default function Footer() {
       <div className="container py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
         <div className="lg:col-span-1 sm:col-span-2">
           <Link href="/" className="flex items-center gap-2.5 mb-4">
-            <span className="flex items-center justify-center w-10 h-10 rounded-full bg-white/10">
+            {/* <span className="flex items-center justify-center w-10 h-10 rounded-full bg-white/10">
               <Plus className="w-5 h-5 text-medred" aria-hidden="true" />
-            </span>
+            </span> */}
+            <Image
+              src="/images/logo/logo.jpg"
+              alt="Medical Key Logo"
+              width={45}
+              height={45}
+            />
             <span className="text-lg font-extrabold tracking-tight">
               MEDICAL <span className="text-medred">KEY</span>
             </span>

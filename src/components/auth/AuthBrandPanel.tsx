@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Plus } from "lucide-react";
 import type { ReactNode } from "react";
 import type { LoginBenefit } from "@/data/auth";
+import Image from "next/image";
 
 interface AuthBrandPanelProps {
   heading: string;
@@ -27,9 +28,13 @@ export function AuthBrandPanel({ heading, description, benefits, illustration }:
       <div className="relative z-10 px-9 pt-10">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5">
-          <span className="flex items-center justify-center w-11 h-11 rounded-full bg-white border border-brand-100 shadow-soft">
-            <Plus className="w-6 h-6 text-medred" aria-hidden="true" />
-          </span>
+          <Image
+            src="/images/logo/logo.png"
+            alt="Medical Key Logo"
+            width={45}
+            height={45}
+          />
+          
           <span className="leading-tight">
             <span className="block text-lg font-extrabold text-brand tracking-tight">
               MEDICAL <span className="text-medred">KEY</span>

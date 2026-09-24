@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { mainNavLinks, moreLinks } from "@/data/footerLinks";
 import { Button, LinkButton } from "@/components/ui/Button";
+import Image from "next/image";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -21,9 +22,12 @@ export default function Header() {
       <div className="container flex items-center justify-between py-3 gap-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 flex-shrink-0" aria-label="Medical Key home">
-          <span className="flex items-center justify-center w-11 h-11 rounded-full bg-brand-50 border border-brand-100">
-            <Plus className="w-6 h-6 text-medred" aria-hidden="true" />
-          </span>
+          <Image
+            src="/images/logo/logo.png"
+            alt="Medical Key Logo"
+            width={45}
+            height={45}
+          />
           <span className="leading-tight">
             <span className="block text-lg font-extrabold text-brand tracking-tight">
               MEDICAL <span className="text-medred">KEY</span>
@@ -79,13 +83,13 @@ export default function Header() {
 
         {/* Right actions */}
         <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
-          <button
+          {/* <button
             type="button"
             aria-label="Search"
             className="flex items-center justify-center w-10 h-10 rounded-full text-ink hover:bg-brand-50 hover:text-brand transition-colors"
           >
             <Search className="w-5 h-5" aria-hidden="true" />
-          </button>
+          </button> */}
           <LinkButton href="/login" variant="outline" size="sm">
             Login / Sign Up
           </LinkButton>

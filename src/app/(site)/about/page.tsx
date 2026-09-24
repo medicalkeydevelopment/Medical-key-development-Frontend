@@ -36,7 +36,7 @@ export default function AboutPage() {
         <p className="text-sm text-ink-muted leading-relaxed mb-10">
           We believe healthcare should be simple, transparent, and affordable. Every doctor on
           our platform is verified, every price is upfront, and support is available around the
-          clock — because healthcare decisions shouldn't come with extra stress.
+          clock — because healthcare decisions should not come with extra stress.
         </p>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-5">

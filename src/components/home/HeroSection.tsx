@@ -14,9 +14,9 @@ export default function HeroSection() {
           </span>
 
           <h1 className="mt-5 text-[32px] sm:text-[40px] lg:text-[48px] font-extrabold leading-[1.15] text-brand">
-            Complete Healthcare
+            Medical & <span className="text-medred">Health</span>
             <br />
-            Solution, <span className="text-medred">All in One Place</span>
+            Service Provider!
           </h1>
 
           <p className="mt-5 text-sm sm:text-base text-ink-muted max-w-lg leading-relaxed">
